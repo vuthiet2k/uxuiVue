@@ -35,46 +35,72 @@
 
 <!-- Begin page -->
 <div id="vm-library-ui-ux">
-        <vm-top-header></vm-top-header>
+    <!--    <vm-top-header></vm-top-header>-->
     <div>
         <loading-data></loading-data>
     </div>
-    <div style="min-height: 750px; background-color: #fff;">
-                <home-book></home-book>
-    </div>
-    <div style="height: 220px">
-        <key-search :api="'http://atk.gishub.vn/api/object/'"></key-search>
-    </div>
-    <div style="height: 500px; background-color: #fff;" class="position-relative">
-        <side-bar-fb></side-bar-fb>
-    </div>
-    <div class="p-5" style="height: 500px;">
-        <input-text @change="handlerChange" :validation="true" :placeholder="'Nhập tên...'"
-                    :label="'Tên :'"></input-text>
-        <input-text @change="handlerChange" :type="'number'" :validation="true" :label="'number :'"></input-text>
-        <input-text @change="handlerChange" :validation="true" :type="'file'" :placeholder="'Nhập tên...'"
-                    :label="'file :'"></input-text>
-        <input-text @change="handlerChange" :validation="true" :type="'email'" :placeholder="'Nhập email...'"
-                    :label="'email :'"></input-text>
-        <input-text @change="handlerChange" :validation="true" :type="'password'" :placeholder="'Nhập password...'"
-                    :label="'password :'"></input-text>
-    </div>
-    <div style="height: 750px;">
-        <div class="position-relative h-100 w-100">
-            <div class="position-absolute w-100" style="height: 70px; background-color: #fff;">Header</div>
-            <div class="position-absolute h-100 mt-5 d-none d-sm-block" style="width: 60px; background-color: #fff;">
-                Side Bar
+    <div class="container">
+        <div class="my-4 w-100 d-flex justify-content-center">
+            <div class="d-flex w-100" style="max-width: 1100px;">
+                <img class="mx-2" src="../../static/thiethv/images/Logo.png" style="height: 70px;">
+            <div class="ms-3"><h5 style="font-weight: bold;">CƠ SỞ DỮ LIỆU TOÁN HỌC VIET NAM</h5> <h6 style="font-weight: bold;">
+                VIETNAM MATHEMATICAL DATABASE</h6></div>
             </div>
         </div>
+        <div class="d-flex justify-content-center w-100">
+            <home-book></home-book>
+        </div>
+        <div class="mt-4 d-flex justify-content-center w-100">
+            <div class="p-3 mx-4"
+                 style="background-color: #fee2bf; max-width: 1100px;border-radius: 25px;border: 1px solid #ae8d69;">
+                The AMS is developing a new user interface for MathSciNet. A beta version is available at <a
+                    href="https://beta.mathscinet.ams.org/mathscinet/beta">https://beta.mathscinet.ams.org/mathscinet/beta</a>.
+                Please give it a try. If you have any comments, we would be glad to hear from you via <a
+                    href="mailto:msn-beta@ams.org">msn-beta@ams.org</a>.
+            </div>
+        </div>
+        <div class="mt-1 d-flex justify-content-center w-100">
+            <div class="p-3 mx-4"
+                 style="background-color: #fee2bf; max-width: 1100px;border-radius: 25px;border: 1px solid #ae8d69;">
+                The IMS and ASA have transferred the data from the <b>Current Index to Statistics (CIS)</b> to the
+                AMS. The data, with a new search interface, is available from the MathSciNet servers at the URL <a
+                    href="https://mathscinet.ams.org/cis">https://mathscinet.ams.org/cis</a>.
+            </div>
+        </div>
+        <div style="height: 220px">
+            <key-search :api="'http://atk.gishub.vn/api/object/'"></key-search>
+        </div>
+        <div style="height: 500px; background-color: #fff;" class="position-relative">
+            <side-bar-fb></side-bar-fb>
+        </div>
+        <div class="p-5" style="height: 500px;">
+            <input-text @change="handlerChange" :validation="true" :placeholder="'Nhập tên...'"
+                        :label="'Tên :'"></input-text>
+            <input-text @change="handlerChange" :type="'number'" :validation="true" :label="'number :'"></input-text>
+            <input-text @change="handlerChange" :validation="true" :type="'file'" :placeholder="'Nhập tên...'"
+                        :label="'file :'"></input-text>
+            <input-text @change="handlerChange" :validation="true" :type="'email'" :placeholder="'Nhập email...'"
+                        :label="'email :'"></input-text>
+            <input-text @change="handlerChange" :validation="true" :type="'password'" :placeholder="'Nhập password...'"
+                        :label="'password :'"></input-text>
+        </div>
+        <div style="height: 750px;">
+            <div class="position-relative h-100 w-100">
+                <div class="position-absolute w-100" style="height: 70px; background-color: #fff;">Header</div>
+                <div class="position-absolute h-100 mt-5 d-none d-sm-block"
+                     style="width: 60px; background-color: #fff;">
+                    Side Bar
+                </div>
+            </div>
+        </div>
+
     </div>
 
-</div>
-
-<!-- import map -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-<script src="https://api.map4d.vn/sdk/map/js?version=2.4&key=fda0ef247812a0f208b654c89a8f9308"></script>
-<script type="module" src="{% static 'thiethv/js/app.js' %}"></script>
+    <!-- import map -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+    <script src="https://api.map4d.vn/sdk/map/js?version=2.4&key=fda0ef247812a0f208b654c89a8f9308"></script>
+    <script type="module" src="{% static 'thiethv/js/app.js' %}"></script>
 </body>
 </html>

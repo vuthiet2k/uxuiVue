@@ -356,4 +356,5 @@ a:hover {
 /*css bosstrap*/
 .form-control {
     box-shadow: none !important;
+    appearance: auto !important;
 }

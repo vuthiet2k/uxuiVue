@@ -4,7 +4,7 @@ const Publications = {
     <div class="container">
         <div>
             <div class="row" style="border-bottom: 1px solid rgba(0,0,0,.09);">
-                <div>Search Terms</div>
+                <div style="color: #f17400; font-weight: bold;">Search Terms</div>
                 <div class="col-sm-3 p-2">
                     <select class="form-control">
                         <option disabled value="">Please select one</option>
@@ -83,7 +83,7 @@ const Publications = {
         </div>
         <div class="d-md-flex d-sm-block" style="gap: 10px;">
             <div class="p-3" style="border-bottom: 1px solid rgba(0,0,0,.09);">
-                <div>Time Frame</div>
+                <div style="color: #f17400; font-weight: bold;">Time Frame</div>
                 <div class="py-2">
                     <input type="radio">
                     <label>Entire Database</label>
@@ -101,7 +101,7 @@ const Publications = {
                 </div>
             </div>
             <div class="p-3" style="border-bottom: 1px solid rgba(0,0,0,.09);">
-                <div>Publication Type</div>
+                <div style="color: #f17400; font-weight: bold;">Publication Type</div>
                 <div>
                     <div class="py-2">
                         <input type="radio">
@@ -116,7 +116,7 @@ const Publications = {
                 </div>
             </div>
             <div class="p-3" style="border-bottom: 1px solid rgba(0,0,0,.09);">
-                <div>Review Format</div>
+                <div style="color: #f17400; font-weight: bold;">Review Format</div>
                 <div>
                     <div class="py-2"><input type="radio">
                         <label>PDF</label></div>
@@ -125,7 +125,7 @@ const Publications = {
                 </div>
             </div>
         </div>
-        <div class="mt-3">
+        <div class="mt-5">
             <button class="btn btn btn-danger">Clear</button>
             <button class="btn btn-primary">Search</button>
         </div>
