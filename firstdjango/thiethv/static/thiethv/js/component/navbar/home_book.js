@@ -9,7 +9,7 @@ const homeBook = {
         'input-text': inputValidated,
     },
     template: `
-    <div class="card h-100 w-100">
+    <div class="card h-100 w-100 position-relative">
         <div class="card__header--book d-md-flex d-none justify-content-end">
             <ul class="row h-100 w-100 m-0 p-0 ps-3" style="max-width: 500px;">
                 <li @click="activeNav(0)" :class="{'book--active': vShowTab(0)}" class="col ms-3">Publications</li>
@@ -17,6 +17,9 @@ const homeBook = {
                 <li @click="activeNav(2)" :class="{'book--active': vShowTab(2)}" class="col ms-3">Journals</li>
                 <li @click="activeNav(3)" :class="{'book--active': vShowTab(3)}" class="col ms-3">Citations</li>
             </ul>
+        </div>
+        <div class="card__header--book d-flex d-md-none justify-content-between position-relative">
+            <i class="bi bi-list position-absolute" style="right: 10px; top: 0; bottom: 0; font-size: 30px;"></i>
         </div>
         <div class="p-3 h-100 d-flex" style="background-color: rgba(3, 3, 3, 0.03)">
             <div class="w-100" v-show="vShowTab(0)">
