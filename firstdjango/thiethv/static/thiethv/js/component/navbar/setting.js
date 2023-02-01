@@ -4,7 +4,7 @@ const SettingNavBar = {
     <div class="position-relative">
     <div class="px-3 d-flex justify-content-between align-items-center" style="height: 48px; border-bottom: 1px solid #ccc;">
     <b style="white-space: nowrap;">Cài đặt</b> <i class="bi bi-backspace" @click="hanldeClose"></i></div>
-    <div class="p-3">Hiding elements
+    <div class="p-3" style="min-width: 360px;overflow-x: hidden; overflow-y: scroll;">Hiding elements
 For faster mobile-friendly development, use responsive display classes for showing and hiding elements by device. Avoid creating entirely different versions of the same site, instead hide element responsively for each screen size.
 
 To hide elements simply use the .d-none class or one of the .d-{sm,md,lg,xl}-none classes for any responsive screen variation.
