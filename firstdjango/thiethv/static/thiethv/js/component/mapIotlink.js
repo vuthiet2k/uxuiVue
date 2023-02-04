@@ -1,3 +1,5 @@
+import API from "../hook/api.js";
+
 const mapIotLink = {
     props: {
         viewObject: {
@@ -240,7 +242,7 @@ const mapIotLink = {
             let duration;
             let url = 'https://api.map4d.vn/sdk/route?key=' + _key + '&origin=' + _origin + '&destination=' + _destination + '&points=' + points + '&mode=' + _mode + '&language=' + language + '&weighting=' + _weighting + '&avoid=' + avoid + `&avoidRoad=` + avoidRoad;
 
-            await useFetch(url)
+            await API.get(url)
                 .then(data => {
                         if (data) {
                             distance = data.result.routes[0].distance.text;

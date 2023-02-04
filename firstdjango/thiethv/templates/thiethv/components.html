@@ -35,6 +35,72 @@
     <div>
         <loading-data></loading-data>
     </div>
+    <div class="w-100 row m-0" style="min-height: 750px; background-color: #fff;">
+        <div class="col-xl-7 p-3">
+            <div class="row h-100 p-3">
+                <div class="col d-flex align-items-center me-2"
+                     style="height: 125px;border: 1px solid rgb(235,230,230); border-radius: 8px">
+                    <div class="position-relative">
+                        <img ref="preViewLogo1" src="../../static/thiethv/images/Logo.png" alt="logo1"
+                             style="height: 110px; width: 110px;object-fit: cover;border-radius: 50%;border: 1px solid rgb(235,230,230);">
+                        <div class="position-absolute" style="background-color: #cccc;height: 25px;width: 25px;
+                        bottom: 5px;right: 5px;border-radius: 50%;">
+                            <div class="position-relative d-flex justify-content-center align-items-center">
+                                <i class="bi bi-camera-fill"></i>
+                                <input @change="handleChangeLogo" class="position-absolute cursor-pointer" type="file"
+                                       style="opacity: 0; top: 0; bottom: 0; left: 0; right: 0;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ms-3">
+                        <h5><b>Logo 1</b></h5>
+                        <span>Logo hiển trị trên thanh header</span>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-center ms-2"
+                     style="height: 125px;border: 1px solid rgb(235,230,230); border-radius: 8px">
+                    <div class="position-relative">
+                        <img src="../../static/thiethv/images/Logo.png" alt="logo1"
+                             style="height: 110px;border-radius: 50%;border: 1px solid rgb(235,230,230);">
+                        <div class="position-absolute" style="background-color: #cccc;height: 25px;width: 25px;
+                        bottom: 5px;right: 5px;border-radius: 50%;">
+                            <div class="position-relative d-flex justify-content-center align-items-center">
+                                <i class="bi bi-camera-fill"></i>
+                                <input class="position-absolute cursor-pointer" type="file"
+                                       style="opacity: 0; top: 0; bottom: 0; left: 0; right: 0;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ms-3">
+                        <h5><b>Logo 2</b></h5>
+                        <span>Logo hiển trị trên thanh header</span>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <label>Center</label>
+                    <input @change="handlerChangeInitMap" type="text" class="form-control"
+                           placeholder="21.016938,105.842252">
+                </div>
+                <div class="col-4">
+                    <label>L</label>
+                    <input class="form-control" placeholder="...">
+                </div>
+                <div class="col-4">
+                    <label>L</label>
+                    <input class="form-control" placeholder="...">
+                </div>
+                <div class="col-4">
+                    <label>L</label>
+                    <input class="form-control" placeholder="...">
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-5">
+            <div class="my-4" style="height: 550px;">
+                <map-iotlink ref="map4d"></map-iotlink>
+            </div>
+        </div>
+    </div>
     <div class="position-relative w-100" style="height: 750px;">
         <div class="position-absolute p-2 d-none d-xl-block"
              style="width: 220px; background-color: #fff;box-shadow: 2px -2px 2px 0px #ccc; top: 0; bottom: 0; left: 0; overflow-y: scroll;">

@@ -363,3 +363,7 @@ a:hover {
     box-shadow: none !important;
     appearance: auto !important;
 }
+/*map*/
+.mf-map4d .mf-ui.mf-ui-bottom-right {
+    display: none;
+}
