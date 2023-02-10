@@ -35,9 +35,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'thiethv.apps.ThiethvConfig',
 
 
+    'thiethv',
     'app_api'
 ]
 
@@ -77,8 +77,8 @@ WSGI_APPLICATION = 'firstdjango.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'django_api',
-        'USER': 'admin',
+        'NAME': 'django_api_new',
+        'USER': 'postgres',
         'PASSWORD': '123',
         'HOST': 'localhost',
         'PORT': '5432',

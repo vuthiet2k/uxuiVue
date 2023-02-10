@@ -5,6 +5,7 @@ import NavBarFb from "./component/navbar/navbar_home.js";
 import inputValidated from "./component/input/input.js";
 import homeBook from "./component/navbar/home_book.js";
 import mapIotLink from "./component/mapIotlink.js";
+import manageTask from "./component/data_tool/manage_task.js";
 
 const vmInstance = new Vue({
     el: "#vm-library-ui-ux",
@@ -16,6 +17,7 @@ const vmInstance = new Vue({
         'input-text': inputValidated,
         'home-book': homeBook,
         'map-iotlink': mapIotLink,
+        "manage-task": manageTask,
     },
     methods: {
         handlerChange: function (data) {

@@ -1,3 +1,5 @@
+import uuid
+
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
@@ -12,9 +14,14 @@ class Category(models.Model):
 
 
 class Course(models.Model):
+    # uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     subject = models.CharField(max_length=255, null=False)
     discription = models.CharField(null=True, blank=True, max_length=400)
     created_date = models.DateField(auto_now_add=True)
     updated_date = models.DateField(auto_now=True)
     active = models.BooleanField(default=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True)
+
+    class Meta:
+        db_table = 'tb_course'
+

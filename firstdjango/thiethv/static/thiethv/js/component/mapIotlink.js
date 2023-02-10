@@ -91,7 +91,7 @@ const mapIotLink = {
                 this.building.newbuilding.setSelected(true);
                 this.building.newbuilding.setDraggable(true);
             }, {building: true});
-            this.searchMarker(this);
+            // this.searchMarker(this);
         },
         handlerSearchLocation: async function (searchValue) {
             try {
