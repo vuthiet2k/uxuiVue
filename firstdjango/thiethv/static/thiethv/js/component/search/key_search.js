@@ -72,7 +72,7 @@ const vmUISearch = {
             vm.dataUI = [];
             vm.isLoading = true;
             vm.setTimeGetApi = setTimeout(async function () {
-                API().get(`${vm.api}/?q=${vm.search}`)
+                API().get(`${vm.api}?q=${vm.search}`)
                     .then(res => {
                         if (res?.results) {
                             vm.dataUI = res.results;

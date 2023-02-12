@@ -1,3 +1,14 @@
+/*animation*/
+@keyframes width-100 {
+    0%{
+        opacity: 0;
+        width: 0px;
+    }
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+}
 /*book*/
 .card__header--book {
     height: 50px;
@@ -362,6 +373,9 @@ a:hover {
 .form-control {
     box-shadow: none !important;
     appearance: auto !important;
+}
+.cursor-pointer {
+    cursor: pointer !important;
 }
 /*map*/
 .mf-map4d .mf-ui.mf-ui-bottom-right {
