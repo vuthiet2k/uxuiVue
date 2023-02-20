@@ -6,11 +6,13 @@ import inputValidated from "./component/input/input.js";
 import homeBook from "./component/navbar/home_book.js";
 import mapIotLink from "./component/mapIotlink.js";
 import manageTask from "./component/data_tool/manage_task.js";
+import NavbarDataTool from "./component/data_tool/navbar.js";
 
 const vmInstance = new Vue({
     el: "#vm-library-ui-ux",
     components: {
         'vm-top-header': vmTopHeader,
+        'vm-nav-bar': NavbarDataTool,
         'loading-data': loadingData,
         'key-search': vmUISearch,
         'side-bar-fb': NavBarFb,

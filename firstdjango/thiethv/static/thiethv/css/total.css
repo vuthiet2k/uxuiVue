@@ -1,6 +1,6 @@
 /*animation*/
 @keyframes width-100 {
-    0%{
+    0% {
         opacity: 0;
         width: 0px;
     }
@@ -9,6 +9,7 @@
         width: 100%;
     }
 }
+
 /*book*/
 .card__header--book {
     height: 50px;
@@ -34,6 +35,18 @@
     border-bottom: 3px solid #4147c1;
     color: #4147c1;
     font-weight: bold;
+}
+
+/*data tool*/
+.nav__asana-active {
+    background: rgba(0, 0, 0, 0.06);
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.nav__asana:hover {
+    background: rgba(0, 0, 0, 0.06);
+    border-radius: 7px;
 }
 
 /*navbarfb*/
@@ -362,11 +375,13 @@ li {
 
 a {
     text-decoration: none;
-    color: #1a0dab;
+    color: #000;
 }
 
 a:hover {
     cursor: pointer;
+    color: #000;
+    font-weight: bold;
 }
 
 /*css bosstrap*/
@@ -374,9 +389,11 @@ a:hover {
     box-shadow: none !important;
     appearance: auto !important;
 }
+
 .cursor-pointer {
     cursor: pointer !important;
 }
+
 /*map*/
 .mf-map4d .mf-ui.mf-ui-bottom-right {
     display: none;

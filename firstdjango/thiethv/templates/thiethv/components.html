@@ -21,7 +21,8 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="https://www.pinterest.com/pin/637751997205907375/">
     <!-- Bootstrap Css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="../../static/thiethv/css/total.css">
 </head>
@@ -31,6 +32,9 @@
 <!-- Begin page -->
 <div id="vm-library-ui-ux">
     <vm-top-header></vm-top-header>
+    <div style="padding-top: 56px;">
+        <vm-nav-bar></vm-nav-bar>
+    </div>
     <div>
         <loading-data></loading-data>
     </div>
@@ -106,56 +110,6 @@
             </div>
         </div>
     </div>
-    <div class="position-relative w-100" style="height: 750px;">
-        <div class="position-absolute p-2 d-none d-xl-block"
-             style="width: 220px; background-color: #fff;box-shadow: 2px -2px 2px 0px #ccc; top: 0; bottom: 0; left: 0; overflow-y: scroll;">
-            <ul>
-                <a href="">
-                    <li class="d-flex align-items-center" style="height: 40px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
-                            <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
-                        </svg>
-                        Trang chủ
-                    </li>
-                </a>
-                <a href="">
-                    <li class="d-flex align-items-center" style="height: 40px;">Quản lý địa điểm</li>
-                </a>
-                <a href="">
-                    <li class="d-flex align-items-center" style="height: 40px;">Quản lý đối tượng</li>
-                </a>
-            </ul>
-        </div>
-        <div class="position-absolute p-2 d-none d-md-block d-xl-none"
-             style="width: 72px; background-color: #fff;box-shadow: 2px -2px 2px 0px #ccc; top: 0; bottom: 0; left: 0;">
-            <ul class="h-100 w-100">
-                <a href="">
-                    <li>Icon</li>
-                </a>
-                <a href="">
-                    <li>Icon</li>
-                </a>
-                <a href="">
-                    <li>Icon</li>
-                </a>
-            </ul>
-        </div>
-        <div class="position-absolute p-2 d-flex d-md-none"
-             style="height: 56px; background-color: #fff;box-shadow: 0 -2px 2px -2px #ccc;bottom: 0;left: 0; right: 0;">
-            <ul class="row h-100 w-100">
-                <a class="col" href="">
-                    <li>Icon</li>
-                </a>
-                <a class="col" href="">
-                    <li>Icon</li>
-                </a>
-                <a class="col" href="">
-                    <li>Icon</li>
-                </a>
-            </ul>
-        </div>
-    </div>
     <div style="height: 220px">
         <key-search :api="'http://atk.gishub.vn/api/object/'"></key-search>
     </div>
@@ -205,8 +159,12 @@
     </div>
 </div>
 <!-- import map -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 <script src="https://api.map4d.vn/sdk/map/js?version=2.4&key=fda0ef247812a0f208b654c89a8f9308"></script>
 <script type="module" src="{% static 'thiethv/js/app.js' %}"></script>
 <script rel="preload" src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
