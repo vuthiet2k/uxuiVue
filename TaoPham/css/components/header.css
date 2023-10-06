@@ -1,0 +1,79 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__container ul {
+    display: flex;
+    list-style: none;
+    gap: 2px;
+}
+
+.header__container ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header__container ul li:hover {
+    background-color: #ccc;
+    color: red;
+}
+
+/* swipper__container */
+.swipper__container {
+    padding-block: 50px;
+}
+
+.swipper__content-taopham {
+    max-width: 50%;
+}
+
+.swipper__content-taopham h3 {
+    padding-block: 0;
+    margin-block: 0;
+}
+
+.swipper__content-taopham p {
+    margin-top: 20px;
+}
+
+.swipper__avatr-taopham img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* albums__container */
+.albums__container {
+    padding-block: 40px;
+}
+
+.albums__container .flex-between {
+    height: 100px;
+    margin-block: 15px;
+}
+
+.albums__container .albums__col-50 {
+    padding: 4px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+    width: calc(50% - 5px);
+    height: 100%;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd1T5Xu-g6a2wB858GK0y4QHYwzdDssUkIdw&usqp=CAU');
+}
+
+.albums__container .albums__col-25 {
+    padding: 4px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+    width: calc(25% - 5px);
+    height: 100%;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd1T5Xu-g6a2wB858GK0y4QHYwzdDssUkIdw&usqp=CAU');
+}
+
+.albums__container .albums__col-75 {
+    flex: 1;
+}
