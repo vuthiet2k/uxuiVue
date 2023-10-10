@@ -1,0 +1,68 @@
+body {
+  background-color: #fff4ea !important;
+  font-family: 'Imprima', sans-serif !important;
+  color: #636363 !important;
+}
+
+.text-primary-taopham {
+  color: #FF9529 !important;
+}
+
+.text-dark-taopham {
+  color: #59340E !important;
+}
+
+.text-light-taopham {
+  color: #BF701F !important;
+}
+
+.btn-shadow-taopham {
+  box-shadow: 0px 4px 0px 0px #FF9529;
+  background-color: #ffefdf !important;
+  border-radius: 25px !important;
+  padding: 10px;
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+ul li {
+  list-style: none !important;
+}
+
+.bg-btn-default {
+  background-color: #ffdebd !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+header {
+  width: 100%;
+  height: 50vw;
+  max-height: 1000px;
+  background-image: url("../src/asset/BG\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .img__text-taopham {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .img__text-taopham img {
+  max-height: 50vw;
+}
+
+.btn__header-menu {
+  width: 400px;
+  text-align: inherit !important;
+}
